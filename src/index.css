@@ -1,0 +1,322 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+}
+
+/* Custom styles for business cards */
+.business-card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gradient-teal {
+  background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+}
+
+.gradient-blue-teal {
+  background: linear-gradient(135deg, #3b82f6 0%, #14b8a6 100%);
+}
+
+.hexagon {
+  width: 120px;
+  height: 120px;
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  transform: rotate(0deg);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 30px solid white;
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: 30px solid white;
+}
+
+/* Responsive design for business cards */
+@media (max-width: 768px) {
+  .business-card {
+    max-width: 100%;
+  }
+
+  .flex.gap-8 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .w-1\/2 {
+    width: 100%;
+  }
+}
+
+/* Ensure consistent sizing */
+.business-card {
+  min-height: 600px;
+}
+
+/* Fixed dimensions for consistent appearance */
+.template-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.template-card {
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* Signature INTRO Card Styles - Compact Design */
+.signature-intro-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: url('/bg-image.png') center/cover no-repeat;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Background overlay for better text readability */
+.background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.4) 100%);
+  z-index: 1;
+}
+
+/* Diagonal teal shape */
+.diagonal-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #4DC0B5;
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+  z-index: 2;
+}
+
+/* Logo Section */
+.logo-section {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+}
+
+.signature-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.s-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.s-shape-1 {
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+  top: 4px;
+  left: 2px;
+  transform: rotate(-15deg);
+}
+
+.s-shape-2 {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 1px;
+  top: 10px;
+  left: 4px;
+  transform: rotate(15deg);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.signature-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+}
+
+.intro-text {
+  font-size: 8px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1;
+}
+
+.tagline {
+  color: #333;
+  font-size: 7px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/* Wave Cards */
+.wave-cards {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  z-index: 10;
+}
+
+.wave-card {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  margin-bottom: -6px;
+  transform: rotate(15deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-card {
+  background: #4A4A4A;
+  z-index: 13;
+}
+
+.light-blue-card {
+  background: #A0D9F5;
+  z-index: 12;
+}
+
+.teal-card {
+  background: #4DC0B5;
+  z-index: 11;
+}
+
+.wave-text {
+  color: white;
+  font-size: 5px;
+  font-weight: 600;
+}
+
+.wave-s-icon {
+  color: white;
+  font-size: 4px;
+  font-weight: 700;
+}
+
+/* Photo Section - Positioned to show 50% background above and 50% below */
+.photo-section {
+  position: absolute;
+  top: 200px; /* Center of 400px height card */
+  left: 15px;
+  z-index: 5;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info */
+.contact-info {
+  position: absolute;
+  top: 200px;
+  left: 105px;
+  z-index: 10;
+  text-align: left;
+  max-width: 180px;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: 8px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1px;
+}
+
+.company {
+  font-size: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Corner Logo */
+.corner-logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: #4DC0B5;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.corner-s-icon {
+  color: white;
+  font-size: 6px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.corner-text {
+  color: white;
+  font-size: 3px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+}
