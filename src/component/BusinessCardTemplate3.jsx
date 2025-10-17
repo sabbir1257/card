@@ -71,20 +71,22 @@ const BusinessCardTemplate3 = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-1/2 min-w-[300px] max-w-[400px] shadow-xl rounded-2xl overflow-hidden min-h-[600px]">
+           <div className="w-1/2 min-w-[300px] max-w-[400px] shadow-xl rounded-2xl overflow-hidden min-h-[600px]">
                 {/* Header Section */}
                 <div className="relative h-60">
-                    <img src="/bg-image.png" alt="" className="h-40 w-full object-cover" />
+                    <img src="" alt="" className="h-40 bg-[#00aba1] w-full object-cover" />
 
                     {/* Small Logo in bottom right */}
                     <div className="absolute bottom-24 right-4">
-                        <div className="w-14 h-14 bg-white rounded flex items-center justify-center shadow-md">
-                            <img src="" alt="" className="w-14 h-14 object-contain bg-[#00aba1]" />
+                        <div class="relative w-14 h-14  rounded-lg overflow-hidden shadow-md">
+                            <img src="" alt="" class="w-full h-full bg-white object-cover" />
+                            <div class="absolute top-0 right-0 w-0 h-0 border-t-[20px] border-l-[20px] border-t-[#00aba1] border-l-transparent"></div>
                         </div>
                     </div>
                     <div className="absolute bottom-6 left-6">
-                        <div className="w-28 h-28 rounded-lg overflow-hidden shadow-md">
-                            <img src="" alt="" className="bg-[#00aba1] w-full h-full object-cover" />
+                        <div class="relative w-28 h-28 rounded-lg overflow-hidden shadow-md">
+                            <img src="" alt="" class="w-full bg-white h-full object-cover" />
+                            <div class="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-l-[40px] border-t-[#00aba1] border-l-transparent"></div>
                         </div>
                     </div>
                     <div className="absolute right-32">
@@ -95,7 +97,6 @@ const BusinessCardTemplate3 = () => {
                 </div>
                 {/* Profile Picture */}
 
-
                 {/* Content Section */}
                 <div>
                     {/* About Me */}
@@ -105,15 +106,15 @@ const BusinessCardTemplate3 = () => {
 
                     {/* Contact Information */}
                     <div className="space-y-3">
-                        <ContactItem icon={<FaPhone />} text="Phone" className="" />
-                        <ContactItem icon={<FaEnvelope />} text="E-mail" />
-                        <ContactItem icon={<FaGlobe />} text="Website" />
-                        <ContactItem icon={<FaMapMarkerAlt />} text="Office Address" />
-                        <ContactItem icon={<FaHome />} text="Home Address" />
+                        <ContactItem icon={<FaPhone />} text="012 5487 663" className="" />
+                        <ContactItem icon={<FaEnvelope />} text="info@yoursite.com" />
+                        <ContactItem icon={<FaGlobe />} text="www.yoursiteurl.com" />
+                        <ContactItem icon={<FaMapMarkerAlt />} text="123 Road State, Country" />
+                        <ContactItem icon={<FaHome />} text="567 Road State, Country" />
                     </div>
 
                     {/* Social Media */}
-                    <div className="space-y-3">
+                    <div className="space-y-3 ">
                         <ContactItem icon={<FaFacebook />} text="Facebook" />
                         <ContactItem icon={<FaInstagram />} text="Instagram" />
                         <ContactItem icon={<FaLinkedin />} text="LinkedIn" />
