@@ -21,12 +21,12 @@ const BusinessCardTemplate = () => {
           {/* Small Logo in bottom right */}
           <div className="absolute bottom-24 right-4">
             <div className="w-14 h-14 bg-white rounded flex items-center justify-center shadow-md">
-              <img src="/log.jpg" alt="" className="w-14 h-14 object-contain" />
+              <img src="/log.jpg" alt="" className="w-14 h-14 bg-[#00aba1] object-contain" />
             </div>
           </div>
           <div className="absolute bottom-6 left-6">
             <div className="w-28 h-28 rounded-lg overflow-hidden shadow-md">
-              <img src="/image.jpg" alt="Profile" className="w-full h-full object-cover" />
+              <img src="/image.jpg" alt="" className="w-full bg-[#00aba1] h-full object-cover" />
             </div>
           </div>
           <div className="absolute right-32">

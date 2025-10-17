@@ -1,4 +1,5 @@
 import BusinessCardTemplate from './component/BusinessCardTemplate';
+import BusinessCardTemplate2 from './component/BusinessCardTemplate2';
 
 
 const userData = {
@@ -29,8 +30,8 @@ function App() {
     <div className="container mx-auto ">
       {/* New Template Component */}
       <div>
-        <h2 className="text-2xl font-semibold mb-4 text-gray-700">Business Card Template - Side by Side</h2>
-        <BusinessCardTemplate data={userData} />
+        {/* <BusinessCardTemplate data={userData} /> */}
+        <BusinessCardTemplate2 />
       </div>
     </div>
   )
