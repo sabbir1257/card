@@ -17,52 +17,20 @@ const BusinessCardTemplate5 = () => {
     return (
         <div className="flex w-[1100px] h-[400px] bg-white mt-20 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.1)] font-['Arial']">
             {/* Left section - Profile picture with teal background */}
-            <div className="w-[40%] h-full flex relative overflow-hidden">
+            <div className="w-[40%] h-full flex relative">
                 {/* Left main image */}
                 <img
                     src="/image.jpg"
                     alt="David John"
-                    className=" w-[70%] h-full object-cover"
+                    className="w-[70%] h-full object-cover"
                 />
-
-                {/* Right side gradient or design image */}
-                {/* <img
-                    src="/blue.png"
-                    alt="Design Shape"
-                    className="absolute w-64 left-56 top-30 h-36 object-cover"
-                /> */}
-                <BlueAxisLogo />
-                <div className="absolute w-64   object-cover"                >
-                    <div class="w-[400px] h-[400px] flex items-center justify-center bg-transparent relative">
-                        {/* <!-- Curved background --> */}
-                        <div class="w-[350px] h-[300px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-r-full relative overflow-hidden flex flex-col items-center justify-center shadow-lg">
-                            {/* <!-- Logo Box --> */}
-                            <div class="bg-white p-4 rounded-sm mb-3">
-                                <div class="grid grid-cols-2 gap-2 w-[100px] h-[100px]">
-                                    <div class="border-4 border-[#0b607a]"></div>
-                                    <div class="bg-[#00b4a5]"></div>
-                                    <div class="bg-white"></div>
-                                    <div class="border-4 border-[#00b4a5]"></div>
-                                </div>
-                            </div>
-                            {/* <!-- Text --> */}
-                            <div class="text-center text-white">
-                                <h2 class="text-lg font-light">BlueAxis</h2>
-                                <h3 class="text-xl font-semibold">Corp</h3>
-                            </div>
-                        </div>
-
-                        {/* <!-- Left curve (top) --> */}
-                        <div class="absolute -left-[50px] top-[50px] w-[100px] h-[100px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-tl-full"></div>
-
-                        {/* <!-- Left curve (bottom) --> */}
-                        <div class="absolute -left-[50px] bottom-[50px] w-[100px] h-[100px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-bl-full"></div>
-                    </div>
+                
+                {/* Logo positioned absolutely */}
+                <div className="absolute left-5 top-3">
+                    <BlueAxisLogo />
                 </div>
 
-
             </div>
-
 
             {/* Right section - Contact information */}
             <div className="w-[60%] bg-white p-10 flex flex-col justify-between relative">
@@ -73,45 +41,44 @@ const BusinessCardTemplate5 = () => {
                     <p className="text-xl text-gray-800 font-normal">InReality, Inc.</p>
                 </div>
 
-
                 {/* Contact details grid */}
                 <div className="grid grid-cols-2 gap-5 mt-8">
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-3 text-gray-800 text-base">
-                            <div class="relative w-10 h-10  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                                <div className="w-8 h-8 text-[#20B2AA]  flex items-center justify-center">
+                            <div className="relative w-10 h-10 overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA]">
+                                <div className="w-8 h-8 text-[#20B2AA] flex items-center justify-center">
                                     <FaPhone />
                                 </div>
-                                <div class="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
+                                <div className="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
                             </div>
                             <span>012 5487 663</span>
                         </div>
                         <div className="flex items-center gap-3 text-gray-800 text-base">
-                            <div class="relative w-10 h-10  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                                <div className="w-8 h-8 text-[#20B2AA]  flex items-center justify-center">
+                            <div className="relative w-10 h-10 overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA]">
+                                <div className="w-8 h-8 text-[#20B2AA] flex items-center justify-center">
                                     <FaGlobe />
                                 </div>
-                                <div class="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
+                                <div className="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
                             </div>
                             <span>www.yoursiteurl.com</span>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-3 text-gray-800 text-base">
-                            <div class="relative w-10 h-10  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                                <div className="w-8 h-8 text-[#20B2AA]  flex items-center justify-center">
+                            <div className="relative w-10 h-10 overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA]">
+                                <div className="w-8 h-8 text-[#20B2AA] flex items-center justify-center">
                                     <FaMapMarkerAlt />
                                 </div>
-                                <div class="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
+                                <div className="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
                             </div>
                             <span>123 Road State</span>
                         </div>
                         <div className="flex items-center gap-3 text-gray-800 text-base">
-                            <div class="relative w-10 h-10  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                                <div className="w-8 h-8 text-[#20B2AA]  flex items-center justify-center">
+                            <div className="relative w-10 h-10 overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA]">
+                                <div className="w-8 h-8 text-[#20B2AA] flex items-center justify-center">
                                     <FaHome />
                                 </div>
-                                <div class="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
+                                <div className="absolute top-0 right-0 w-0 h-0 border-t-[15px] border-l-[15px] border-t-[#00aba1] border-l-transparent"></div>
                             </div>
                             <span>456 Road State</span>
                         </div>
@@ -120,48 +87,14 @@ const BusinessCardTemplate5 = () => {
 
                 {/* Social media icons */}
                 <div className="flex gap-2 my-5">
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaFacebookF />
+                    {[FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaTiktok, FaLinkedinIn].map((Icon, index) => (
+                        <div key={index} className="relative w-8 h-8 overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA]">
+                            <div className="w-6 h-6 text-[#20B2AA] flex items-center justify-center">
+                                <Icon />
+                            </div>
+                            <div className="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
                         </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaInstagram />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaTwitter />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaYoutube />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaWhatsapp />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaTiktok />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
-                    <div class="relative w-8 h-8  overflow-hidden shadow-md flex items-center justify-center border-1 border-[#20B2AA] ">
-                        <div className="w-6 h-6 text-[#20B2AA]  flex items-center justify-center">
-                            <FaLinkedinIn />
-                        </div>
-                        <div class="absolute top-0 right-0 w-0 h-0 border-t-[12px] border-l-[12px] border-t-[#00aba1] border-l-transparent"></div>
-                    </div>
+                    ))}
                 </div>
 
                 {/* Save contact button */}

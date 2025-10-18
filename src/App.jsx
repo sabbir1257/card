@@ -15,8 +15,8 @@ function App() {
         {/* <BusinessCardTemplate2 /> */}
         {/* <BusinessCardTemplate3/> */}
         {/* <BusinessCardTemplate4/> */}
-        {/* <BusinessCardTemplate5/> */}
-        <BlueAxisLogo/>
+        <BusinessCardTemplate5/>
+        {/* <BlueAxisLogo/> */}
       </div>
     </div>
   )

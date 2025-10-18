@@ -2,33 +2,24 @@ import React from "react";
 
 const BlueAxisLogo = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white">
+    <div className="flex items-center justify-center  ">
       {/* Main Wrapper */}
-      <div className="relative w-72 h-72">
+      <div className="relative w-40 h-40">
         {/* Curved Main Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#075472] to-[#02afa6] rounded-[0_180px_180px_0]"></div>
 
         {/* Folded Top Effect */}
-        <div className="absolute left-0 -top-16 w-10 h-16 bg-[#144f5a] rounded-tl-[80px] opacity-80"></div>
+        <div className="absolute left-0 -top-16 w-10 h-16 bg-[#237f8e] rounded-tl-[80px] "></div>
 
         {/* Folded Bottom Effect */}
-        <div className="absolute left-0 -bottom-16 w-10 h-16 bg-[#196170] rounded-bl-[80px] opacity-80"></div>
+        <div className="absolute left-0 -bottom-16 w-10 h-16 bg-[#237f8e] rounded-bl-[80px] "></div>
 
         {/* Inner White Logo + Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          {/* Geometric Symbol */}
-          <div className="bg-transparent border border-transparent p-2">
-            <div className="bg-white p-2">
-              <div className="grid grid-cols-2 gap-1">
-                <div className="border-2 border-[#037a84] h-16 w-10"></div>
-                <div className="border-2 border-[#037a84] h-10 w-12"></div>
-                <div className="col-span-2 border-2 border-[#037a84] h-12 w-24"></div>
-              </div>
-            </div>
+          {/* Geometric Symbol Container */}
+          <div className="">
+          <img src="/log.jpg" alt="" className="w-20 h-20" />
           </div>
-
-          {/* Text Section */}
-
         </div>
       </div>
     </div>
