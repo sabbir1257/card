@@ -22,11 +22,11 @@ const BusinessCardTemplate5 = () => {
                 <img
                     src="/image.jpg"
                     alt="David John"
-                    className="w-[70%] h-full object-cover"
+                    className="w-[70%] h-full rounded-r-[40px] object-cover"
                 />
                 
                 {/* Logo positioned absolutely */}
-                <div className="absolute left-5 top-3">
+                <div className="absolute left-67 top-30">
                     <BlueAxisLogo />
                 </div>
 
