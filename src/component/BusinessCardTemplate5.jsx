@@ -11,6 +11,7 @@ import {
     FaTiktok,
     FaLinkedinIn
 } from 'react-icons/fa';
+import BlueAxisLogo from './BlueAxisLogo';
 
 const BusinessCardTemplate5 = () => {
     return (
@@ -25,11 +26,41 @@ const BusinessCardTemplate5 = () => {
                 />
 
                 {/* Right side gradient or design image */}
-                <img
+                {/* <img
                     src="/blue.png"
                     alt="Design Shape"
                     className="absolute w-64 left-56 top-30 h-36 object-cover"
-                />
+                /> */}
+                <BlueAxisLogo />
+                <div className="absolute w-64   object-cover"                >
+                    <div class="w-[400px] h-[400px] flex items-center justify-center bg-transparent relative">
+                        {/* <!-- Curved background --> */}
+                        <div class="w-[350px] h-[300px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-r-full relative overflow-hidden flex flex-col items-center justify-center shadow-lg">
+                            {/* <!-- Logo Box --> */}
+                            <div class="bg-white p-4 rounded-sm mb-3">
+                                <div class="grid grid-cols-2 gap-2 w-[100px] h-[100px]">
+                                    <div class="border-4 border-[#0b607a]"></div>
+                                    <div class="bg-[#00b4a5]"></div>
+                                    <div class="bg-white"></div>
+                                    <div class="border-4 border-[#00b4a5]"></div>
+                                </div>
+                            </div>
+                            {/* <!-- Text --> */}
+                            <div class="text-center text-white">
+                                <h2 class="text-lg font-light">BlueAxis</h2>
+                                <h3 class="text-xl font-semibold">Corp</h3>
+                            </div>
+                        </div>
+
+                        {/* <!-- Left curve (top) --> */}
+                        <div class="absolute -left-[50px] top-[50px] w-[100px] h-[100px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-tl-full"></div>
+
+                        {/* <!-- Left curve (bottom) --> */}
+                        <div class="absolute -left-[50px] bottom-[50px] w-[100px] h-[100px] bg-gradient-to-r from-[#0b607a] to-[#00b4a5] rounded-bl-full"></div>
+                    </div>
+                </div>
+
+
             </div>
 
 
