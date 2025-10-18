@@ -9,10 +9,10 @@ const BlueAxisLogo = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#075472] to-[#02afa6] rounded-[0_180px_180px_0]"></div>
 
         {/* Folded Top Effect */}
-        <div className="absolute left-0 -top-16 w-10 h-10 bg-[#1a7688] rounded-tl-[80px] opacity-80"></div>
+        <div className="absolute left-0 -top-16 w-10 h-16 bg-[#144f5a] rounded-tl-[80px] opacity-80"></div>
 
         {/* Folded Bottom Effect */}
-        <div className="absolute left-0 -bottom-16 w-10 h-56 bg-[#1a7688] rounded-bl-[80px] opacity-80"></div>
+        <div className="absolute left-0 -bottom-16 w-10 h-16 bg-[#196170] rounded-bl-[80px] opacity-80"></div>
 
         {/* Inner White Logo + Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
@@ -28,10 +28,7 @@ const BlueAxisLogo = () => {
           </div>
 
           {/* Text Section */}
-          <div className="mt-3 text-center leading-tight">
-            <p className="text-white text-lg font-medium">BlueAxis</p>
-            <p className="text-white text-lg font-semibold">Corp</p>
-          </div>
+
         </div>
       </div>
     </div>
