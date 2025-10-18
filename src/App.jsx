@@ -9,11 +9,11 @@ function App() {
     <div className="container mx-auto ">
       {/* New Template Component */}
       <div>
-        {/* <BusinessCardTemplate data={userData} /> */}
         {/* <BusinessCardTemplate2 /> */}
         {/* <BusinessCardTemplate3/> */}
         {/* <BusinessCardTemplate4/> */}
         <BusinessCardTemplate5/>
+        {/* <BusinessCardTemplate6/> */}
       </div>
     </div>
   )

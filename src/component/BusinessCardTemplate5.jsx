@@ -14,35 +14,34 @@ import {
 
 const BusinessCardTemplate5 = () => {
     return (
-        <div className="flex w-[900px] h-[400px] bg-white mt-20 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.1)] font-['Arial']">
+        <div className="flex w-[1100px] h-[400px] bg-white mt-20 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.1)] font-['Arial']">
             {/* Left section - Profile picture with teal background */}
-            <div className="w-[40%] bg-gradient-to-br from-[#20B2AA] to-[#48CAE4] flex items-center justify-center relative">
-                <div className="w-[200px] h-[200px] rounded-full border-4 border-[#1a9b94] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.2)]">
-                    <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-                        alt="David John"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+            <div className="w-[40%] h-full flex relative overflow-hidden">
+                {/* Left main image */}
+                <img
+                    src="/image.jpg"
+                    alt="David John"
+                    className=" w-[70%] h-full object-cover"
+                />
+
+                {/* Right side gradient or design image */}
+                <img
+                    src="/blue.png"
+                    alt="Design Shape"
+                    className="absolute w-64 left-56 top-30 h-36 object-cover"
+                />
             </div>
+
 
             {/* Right section - Contact information */}
             <div className="w-[60%] bg-white p-10 flex flex-col justify-between relative">
-                {/* Logo section */}
-                <div className="absolute top-5 right-5 z-[2]">
-                    <div className="flex items-center gap-2">
-                        <span className="bg-[#1a9b94] font-bold">
-                            <img src="/log.jpg" alt="" className="w-14 h-14 object-contain" />
-                        </span>
-                    </div>
-                </div>
-
                 {/* Name and title */}
-                <div className="">
+                <div className="border-l-4 border-[#20B2AA] pl-4">
                     <h1 className="text-4xl font-bold text-gray-800 mb-2">David John</h1>
                     <p className="text-xl text-gray-800 mb-1 font-normal">Managing Director</p>
                     <p className="text-xl text-gray-800 font-normal">InReality, Inc.</p>
                 </div>
+
 
                 {/* Contact details grid */}
                 <div className="grid grid-cols-2 gap-5 mt-8">
