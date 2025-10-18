@@ -76,10 +76,14 @@ const BusinessCardTemplate3 = () => {
 }
 
 const ContactItem = ({ icon, text }) => (
-    <div className="!my-1.5 !mx-5 !p-1.5 border-[#0d9488]   flex  items-center bg-white rounded-xl border shadow-sm hover:bg-gray-50 transition px-4 py-3">
-        <div className="bg-[#0d9488] !mr-2.5 text-white flex-shrink-0 w-8 h-8 flex border rounded-[10px] items-center justify-center  text-lg">
-            {icon}
+    <div className="!my-1.5 !mx-5 !p-1.5 border-[#0d9488] flex  items-center bg-white border shadow-sm hover:bg-gray-50 transition px-4 py-3">
+        <div class="relative !mr-2.5 w-8 h-8 overflow-hidden shadow-md">
+            <div className="text-[#0d9488] flex-shrink-0 w-8 h-8 flex border items-center justify-center  text-lg">
+                {icon}
+            </div>
+            <div class="absolute top-0 right-0 w-0 h-0 border-t-[10px] border-l-[10px] border-t-[#00aba1] border-l-transparent"></div>
         </div>
+
         <span className="text-black text-sm font-medium break-words flex-1">{text}</span>
     </div>
 );
