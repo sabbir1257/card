@@ -4,7 +4,7 @@ import BusinessCardTemplate2 from './component/BusinessCardTemplate2';
 import BusinessCardTemplate3 from './component/BusinessCardTemplate3';
 import BusinessCardTemplate4 from './component/BusinessCardTemplate4';
 import BusinessCardTemplate5 from './component/BusinessCardTemplate5';
-import BusinessCardDesigner from './component/BusinessCardTemplate6';
+import BusinessCardTemplate6 from './component/BusinessCardTemplate6';
 import CurvedShape from './component/CurvedShape';
 
 
@@ -19,7 +19,7 @@ function App() {
         {/* <BusinessCardTemplate4/> */}
         {/* <BusinessCardTemplate5/> */}
         {/* <BlueAxisLogo/> */}
-        <BusinessCardDesigner />
+        <BusinessCardTemplate6 />
         {/* <CurvedShape /> */}
       </div>
     </div>
