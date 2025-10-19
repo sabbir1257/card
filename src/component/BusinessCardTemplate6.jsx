@@ -41,8 +41,6 @@ const BusinessCardTemplate6 = () => {
                 </div>
             </div>
 
-
-
             {/* Right section - Contact information */}
             <div className="w-[65%] bg-white p-10 flex flex-col justify-between relative">
 
